@@ -11,11 +11,11 @@ export default function Hero() {
           src={mockups}
           alt=""
           priority
-          className="absolute top-[-18.5%] left-1/2 z-10 h-5/4 w-auto max-w-none -translate-x-1/2 xl:-top-41.5 xl:left-[calc(50%+5.25rem)] xl:h-auto xl:w-3xl xl:translate-x-0"
+          className="pointer-events-none absolute top-[-18.5%] left-1/2 z-10 h-5/4 w-auto max-w-none -translate-x-1/2 xl:-top-41.5 xl:left-[calc(50%+5.25rem)] xl:h-auto xl:w-3xl xl:translate-x-0"
         />
       </div>
 
-      <div className="px-6 md:px-20 xl:h-full">
+      <div className="relative px-6 md:px-20 xl:h-full">
         <div className="v-page pt-12 pb-14 text-center md:pb-18 xl:flex xl:h-full xl:flex-col xl:justify-center xl:py-0 xl:text-left">
           <h1 className="mx-auto max-w-[8em] text-heading-xl md:text-display xl:mx-0">
             Next generation digital banking

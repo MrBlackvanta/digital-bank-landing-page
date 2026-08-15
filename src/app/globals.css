@@ -171,7 +171,7 @@
 }
 
 @utility v-hero-backdrop {
-  @apply absolute inset-0 overflow-hidden;
+  @apply pointer-events-none absolute inset-0 overflow-hidden;
 
   &::before {
     @apply absolute -top-67 left-[calc(50%-6rem)] aspect-1271/1034 w-318 bg-[url(/bg-intro-desktop.svg)] bg-cover content-[''];
