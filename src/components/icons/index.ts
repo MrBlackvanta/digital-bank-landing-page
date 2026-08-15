@@ -1,0 +1,12 @@
+export { default as ApiIcon } from "./ApiIcon";
+export { default as BudgetingIcon } from "./BudgetingIcon";
+export { default as CloseIcon } from "./CloseIcon";
+export { default as FacebookIcon } from "./FacebookIcon";
+export { default as InstagramIcon } from "./InstagramIcon";
+export { default as LogoIcon } from "./LogoIcon";
+export { default as MenuIcon } from "./MenuIcon";
+export { default as OnboardingIcon } from "./OnboardingIcon";
+export { default as OnlineBankingIcon } from "./OnlineBankingIcon";
+export { default as PinterestIcon } from "./PinterestIcon";
+export { default as TwitterIcon } from "./TwitterIcon";
+export { default as YoutubeIcon } from "./YoutubeIcon";
