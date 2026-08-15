@@ -23,12 +23,12 @@ export default function SiteHeader() {
 
     document.addEventListener("keydown", closeOnEscape);
     desktopNav.addEventListener("change", close);
-    document.body.classList.add("overflow-hidden");
+    document.body.classList.add("v-scroll-lock");
 
     return () => {
       document.removeEventListener("keydown", closeOnEscape);
       desktopNav.removeEventListener("change", close);
-      document.body.classList.remove("overflow-hidden");
+      document.body.classList.remove("v-scroll-lock");
     };
   }, [menuOpen]);
 

@@ -148,11 +148,21 @@
   }
 }
 
+@utility v-scroll-lock {
+  @media (width < 80rem) {
+    overflow: hidden;
+  }
+}
+
 @utility v-menu-overlay {
-  @apply fixed inset-x-0 top-16 bottom-0 z-10 hidden bg-linear-to-b from-blue-950 to-blue-950/0 px-6 pt-6 opacity-0 md:px-20 xl:hidden;
+  @apply fixed inset-x-0 top-16 bottom-0 z-10 hidden bg-linear-to-b from-blue-950 to-blue-950/0 px-6 pt-6 opacity-0 md:px-20;
 
   &[data-open] {
-    @apply block opacity-100 starting:opacity-0;
+    @apply opacity-100 starting:opacity-0;
+
+    @media (width < 80rem) {
+      @apply block;
+    }
   }
 
   @media (prefers-reduced-motion: no-preference) {
