@@ -1,4 +1,3 @@
-import Image from "next/image";
 import mockups from "@/assets/images/image-mockups.webp";
 
 export default function Hero() {
@@ -7,10 +6,13 @@ export default function Hero() {
       <div className="hidden xl:v-hero-backdrop xl:block" />
 
       <div className="relative h-[min(92vw,36.25rem)] overflow-hidden bg-[url(/bg-intro-mobile.svg)] bg-cover bg-top xl:contents">
-        <Image
-          src={mockups}
+        <img
+          src={mockups.src}
           alt=""
-          priority
+          width={mockups.width}
+          height={mockups.height}
+          fetchPriority="high"
+          decoding="async"
           className="pointer-events-none absolute top-[-18.5%] left-1/2 z-10 h-5/4 w-auto max-w-none -translate-x-1/2 xl:-top-41.5 xl:left-[calc(50%+5.25rem)] xl:h-auto xl:w-3xl xl:translate-x-0"
         />
       </div>

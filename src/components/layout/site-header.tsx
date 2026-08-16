@@ -20,15 +20,18 @@ export default function SiteHeader() {
       toggleRef.current?.focus();
     };
     const desktopNav = window.matchMedia(DESKTOP_NAV);
+    const behindMenu = document.querySelectorAll("main, footer");
 
     document.addEventListener("keydown", closeOnEscape);
     desktopNav.addEventListener("change", close);
     document.body.classList.add("v-scroll-lock");
+    behindMenu.forEach((section) => section.setAttribute("inert", ""));
 
     return () => {
       document.removeEventListener("keydown", closeOnEscape);
       desktopNav.removeEventListener("change", close);
       document.body.classList.remove("v-scroll-lock");
+      behindMenu.forEach((section) => section.removeAttribute("inert"));
     };
   }, [menuOpen]);
 
@@ -87,6 +90,7 @@ export default function SiteHeader() {
               <li key={label}>
                 <a
                   href={href}
+                  onClick={() => setMenuOpen(false)}
                   className="block py-2 text-center text-lead hover:text-teal-700"
                 >
                   {label}

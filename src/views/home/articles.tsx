@@ -1,5 +1,4 @@
 import { articles } from "@/data/data";
-import Image from "next/image";
 
 export default function Articles() {
   return (
@@ -15,10 +14,13 @@ export default function Articles() {
               key={title}
               className="overflow-hidden rounded-card bg-white pb-7"
             >
-              <Image
-                src={image}
+              <img
+                src={image.src}
                 alt=""
-                sizes="(min-width: 80rem) 17vw, (min-width: 48rem) 39vw, 88vw"
+                width={image.width}
+                height={image.height}
+                loading="lazy"
+                decoding="async"
                 className="h-50 w-full object-cover"
               />
               <div className="px-8 pt-6 sm:px-10 lg:px-5">
