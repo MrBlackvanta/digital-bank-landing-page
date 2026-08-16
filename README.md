@@ -37,7 +37,7 @@ This is a solution to the [Digitalbank landing page challenge on Frontend Mentor
 **Body copy is darkened from `#9597A5` to `#6D6F80`.** The design's grey fails WCAG AA against all
 three surfaces it sits on, and it is the ink for every paragraph, the nav links, the article bylines
 and the article excerpts — one token, so one fix. The replacement holds the style guide's
-`hsl(233 8% …)` hue and saturation ad drops lightness from 62% to 47%, which is the smallest move
+`hsl(233 8% …)` hue and saturation and drops lightness from 62% to 47%, which is the smallest move
 that clears 4.5:1 on the worst backdrop.
 
 |                        | design                 | contrast | shipped                | contrast |
