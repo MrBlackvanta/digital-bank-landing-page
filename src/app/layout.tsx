@@ -15,6 +15,14 @@ const description =
   "Take your financial life online. One Digitalbank account for spending, saving, budgeting, investing, and much more.";
 const siteUrl =
   "https://digital-bank-landing-page.abdelrhman-ahmed8881.workers.dev";
+const cardImages = [
+  {
+    url: "/opengraph-image.jpg",
+    width: 1200,
+    height: 630,
+    alt: "The Digitalbank app on four phone screens",
+  },
+];
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -28,11 +36,13 @@ export const metadata: Metadata = {
     siteName: name,
     locale: "en_US",
     type: "website",
+    images: cardImages,
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title,
     description,
+    images: cardImages,
   },
 };
 
