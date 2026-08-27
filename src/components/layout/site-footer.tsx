@@ -47,16 +47,7 @@ export default function SiteFooter() {
       </div>
 
       <p className="pb-0.5 text-center text-body-sm text-white/55">
-        Challenge by{" "}
-        <a
-          className="v-attribution-link"
-          href="https://www.frontendmentor.io?ref=challenge"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Frontend Mentor
-        </a>
-        . Coded by{" "}
+        Coded by{" "}
         <a
           className="v-attribution-link"
           href="https://www.linkedin.com/in/abdelrhman-vanta/"
