@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Public_Sans } from "next/font/google";
+import { siteUrl } from "@/app/site";
 import "./globals.css";
 
 const publicSans = Public_Sans({
@@ -13,8 +14,6 @@ const name = "Digitalbank";
 const title = `${name} | Next generation digital banking`;
 const description =
   "Take your financial life online. One Digitalbank account for spending, saving, budgeting, investing, and much more.";
-const siteUrl =
-  "https://digital-bank-landing-page.abdelrhman-ahmed8881.workers.dev";
 const cardImages = [
   {
     url: "/opengraph-image.jpg",
